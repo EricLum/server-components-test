@@ -1,3 +1,4 @@
-export async function GET(request: Request) {
-  return new Response('Hello, Next.js!')
+
+export default async function handler(req, res) {
+  res.status(200).json({ name: 'John Doe' })
 }
